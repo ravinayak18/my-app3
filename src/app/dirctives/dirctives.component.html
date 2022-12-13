@@ -1,0 +1,32 @@
+<p>dirctives works!</p>
+<h2>{{today}}</h2>
+<h2>{{today | date:'full'}}</h2>
+<h3>{{today | date:'small'}}</h3>
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+<select name="" id="" >
+    <option *ngFor="let state of states"> {{state}}</option>
+</select>
+<table class="table">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>package</th>
+        </tr>
+    
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+        <td>{{user.name | uppercase}}</td>
+        <td [ngClass]="{'red':user.age>0&&user.age<10,'yellow':user.age>10&&user.age<20,'green':user.age>20}">{{user.age}}</td>
+        <td [ngStyle]="{'background-color':user.package>12?'red':'green'}">{{user.package}}</td>
+    
+    </tr>
+    </tbody>
+</table>
+
+<h1 *ngIf="time>0&&time<12">Good Morning</h1>
+<h1 *ngIf="time>12&&time<18">Good evening</h1>
+<h1 *ngIf="time>18&&time<24">Good night</h1>

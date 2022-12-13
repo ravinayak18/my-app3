@@ -10,6 +10,10 @@ import { HomeComponent } from './home/home.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirctivesComponent } from './dirctives/dirctives.component';
+
+import { GpayComponent } from './gpay/gpay.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { FormsModule } from '@angular/forms';
     PagenotfoundComponent,
     HomeComponent,
     CalculatorComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DirctivesComponent,
+
+    GpayComponent,
+     FlipkartComponent
   ],
   imports: [
     BrowserModule,
