@@ -1,0 +1,22 @@
+.product{
+    border: 0px solid red;
+    display: inline;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 20%;
+    overflow: scroll;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2 px goldenrod;
+
+}
+.product:hover{
+cursor: pointer;
+height: 50%;
+}
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: 200;
+}

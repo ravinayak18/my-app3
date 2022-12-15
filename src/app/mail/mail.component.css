@@ -1,0 +1,16 @@
+div{
+    border: 0px solid yellow;
+}
+.visited{
+    color: green;
+}
+*{
+    background-color: aliceblue;
+}
+*:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+.unvisited{
+    color: red;
+}
