@@ -6,28 +6,29 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url(kantara.gif);
+    background-image: url(ball.gif);
     background-size: cover;
 }
 
 
 .login-form{
-    height: 30%;
+    height: 40%;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.081);
     text-align: center;
     border-radius: 10px;
-    color: rgb(31, 28, 192);
+    color: rgb(255, 255, 255);
     font-weight: 500px;
     position: absolute;
     left: 35%;
     padding: 20px;
+    margin-bottom: 0px;
 }
 
 
 .login-form input{
     padding: 5px;
-    /* margin-top: 30px; */
+    margin-top: 30px; 
     border: 1px solid gray;
     border-radius:20px;
     cursor: pointer;

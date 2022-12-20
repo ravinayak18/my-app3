@@ -1,3 +1,19 @@
+<select [(ngModel)]="column">
+    <option value="color">color</option>
+    <option value="model">model</option>
+    <option value="type">type</option>
+</select>
+<select [ngModel]="order">
+    <option value="asc">Ascending</option>
+    <option value="desc">descending</option>
+
+</select>
+
+<button (click)="sort()">Sort</button>
+
+<input type="text" [(ngModel)] ="term">
+<button (click)="filter()">filter</button>
+
 <table class="table">
     <thead>
         <th>vehicle</th>
@@ -8,6 +24,7 @@
         <th>color</th>
         <th>image</th>
         <th>id</th>
+        <th>action</th>
     </thead>
     <tbody>
         <tr *ngFor="let vehicle of vehicles">
@@ -17,10 +34,24 @@
             <td>{{vehicle.type}}</td>
             <td>{{vehicle.fuel}}</td>
             <td>{{vehicle.color}}</td>
-            
-            
             <img src="{{ vehicle.image }}" alt="" width="80px" height="70px">
-
+            <td>{{vehicle.id}}id</td>
+            <td>
+                <button (click)="delete(vehicle.id)">delete</button>
+            </td>
         </tr>
     </tbody>
 </table>
+
+<ul class="pagination">
+    
+  
+<ul class="pagination">
+    
+    <li (click)="page(1)" class="page-item"><a class="page-link">1</a></li>
+    <li (click)="page(2)" class="page-item"><a class="page-link">2</a></li>
+    <li (click)="page(3)" class="page-item"><a class="page-link">3</a></li>
+   
+  </ul>
+   
+  </ul>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BankService } from '../bank.service';
+import { BankserviceService } from '../bankservice.service';
 
 @Component({
   selector: 'app-gpay',
@@ -7,23 +7,18 @@ import { BankService } from '../bank.service';
   styleUrls: ['./gpay.component.css']
 })
 export class GpayComponent {
-
-  public amount:number=0;
-
-  constructor(private _bankservice:BankService){
+  public amount :number=0;
+  constructor(private _bankserviceservice:BankserviceService){ 
 
   }
 
-  withdraw(){
-    this._bankservice.withdraw(this.amount);
-
-  }
+withdraw(){
+  this._bankserviceservice.withdraw(this.amount);
+}
 deposit(){
-  this._bankservice.deposit(this.amount);
-
+  this._bankserviceservice.deposit(this.amount);
 }
 showbalance(){
-  alert(this._bankservice.getBalance());
-
+  alert(this._bankserviceservice.showbalance());
 }
 }
